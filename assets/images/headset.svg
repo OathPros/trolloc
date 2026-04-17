@@ -1,0 +1,7 @@
+<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 400 300'>
+  <rect width='400' height='300' fill='#edf2f7'/>
+  <path d='M130 160a70 70 0 0 1 140 0' fill='none' stroke='#5f6d7e' stroke-width='20'/>
+  <rect x='122' y='160' width='28' height='50' rx='10' fill='#5f6d7e'/>
+  <rect x='250' y='160' width='28' height='50' rx='10' fill='#5f6d7e'/>
+  <rect x='272' y='198' width='44' height='10' rx='5' fill='#5f6d7e'/>
+</svg>
