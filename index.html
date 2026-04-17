@@ -1,0 +1,72 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>York UIT Computer Ordering</title>
+    <link rel="stylesheet" href="styles/main.css" />
+    <script type="module" src="scripts/app.js" defer></script>
+  </head>
+  <body>
+    <header class="topbar">
+      <h1>York UIT Device Ordering</h1>
+      <button id="open-cart" class="cart-button" hidden aria-label="Open order cart">
+        Order <span id="cart-count">0</span>
+      </button>
+    </header>
+
+    <main>
+      <section class="setups" aria-labelledby="setup-title">
+        <div class="section-head">
+          <h2 id="setup-title">Suggested setups</h2>
+        </div>
+        <div id="setup-list" class="setup-grid"></div>
+      </section>
+
+      <section class="catalog" aria-labelledby="catalog-title">
+        <div class="section-head catalog-head">
+          <h2 id="catalog-title">Products</h2>
+          <div id="category-filters" class="filters" role="tablist" aria-label="Filter products"></div>
+        </div>
+        <div id="product-grid" class="product-grid" aria-live="polite"></div>
+      </section>
+    </main>
+
+    <dialog id="product-dialog" class="modal" aria-label="Product details"></dialog>
+    <dialog id="setup-dialog" class="modal" aria-label="Setup comparison"></dialog>
+
+    <aside id="cart-panel" class="cart-panel" aria-labelledby="cart-title" hidden>
+      <div class="panel-head">
+        <h2 id="cart-title">Order</h2>
+        <button id="close-cart" aria-label="Close cart">Close</button>
+      </div>
+      <div id="cart-items" class="cart-items"></div>
+      <div class="totals">
+        <strong>Total: <span id="cart-total">$0.00</span></strong>
+      </div>
+
+      <form id="checkout-form" class="checkout-form">
+        <h3>Checkout</h3>
+        <label>Name <input name="name" required autocomplete="name" /></label>
+        <label>Department <input name="department" required /></label>
+        <label>Budget Number <input name="budget" required /></label>
+        <label>Is this CRP?
+          <select name="isCrp" id="is-crp" required>
+            <option value="no">No</option>
+            <option value="yes">Yes</option>
+          </select>
+        </label>
+
+        <div id="crp-fields" hidden>
+          <label>CRP Project Code <input name="crpProjectCode" /></label>
+          <label>CRP Approver Name <input name="crpApprover" /></label>
+          <label>CRP End Date <input name="crpEndDate" type="date" /></label>
+        </div>
+
+        <button type="submit" id="submit-order">Generate order email</button>
+      </form>
+
+      <p id="submit-feedback" class="feedback" role="status" aria-live="polite"></p>
+    </aside>
+  </body>
+</html>

@@ -1,0 +1,115 @@
+{
+  "categories": ["Windows", "Mac", "Peripherals"],
+  "products": [
+    {
+      "id": "w-latitude-7450",
+      "name": "Dell Latitude 7450",
+      "price": 1799,
+      "image": "assets/images/windows-laptop.svg",
+      "tags": ["Recommended", "Dock-ready"],
+      "category": "Windows",
+      "description": "14-inch business laptop for daily office workloads.",
+      "specs": ["Intel Core Ultra 7", "32GB RAM", "512GB SSD", "Windows 11 Pro"]
+    },
+    {
+      "id": "w-elitebook-840",
+      "name": "HP EliteBook 840 G11",
+      "price": 1699,
+      "image": "assets/images/windows-laptop.svg",
+      "tags": ["Travel", "Lightweight"],
+      "category": "Windows",
+      "description": "Portable Windows laptop for hybrid and travel use.",
+      "specs": ["Intel Core Ultra 5", "16GB RAM", "512GB SSD", "Wi-Fi 6E"]
+    },
+    {
+      "id": "m-macbook-pro-14",
+      "name": "MacBook Pro 14-inch",
+      "price": 2599,
+      "image": "assets/images/mac-laptop.svg",
+      "tags": ["Recommended", "High performance"],
+      "category": "Mac",
+      "description": "Performance-focused Mac notebook for advanced workflows.",
+      "specs": ["Apple M3 Pro", "18GB unified memory", "512GB SSD", "macOS"]
+    },
+    {
+      "id": "m-macbook-air-13",
+      "name": "MacBook Air 13-inch",
+      "price": 1499,
+      "image": "assets/images/mac-laptop.svg",
+      "tags": ["Portable", "Quiet"],
+      "category": "Mac",
+      "description": "Thin and light Mac laptop for standard productivity.",
+      "specs": ["Apple M3", "16GB unified memory", "512GB SSD", "macOS"]
+    },
+    {
+      "id": "p-monitor-27",
+      "name": "Dell 27-inch QHD Monitor",
+      "price": 389,
+      "image": "assets/images/monitor.svg",
+      "tags": ["Ergonomic", "Desk setup"],
+      "category": "Peripherals",
+      "description": "Primary monitor for office desks.",
+      "specs": ["2560x1440", "USB-C + HDMI", "Height adjustable"]
+    },
+    {
+      "id": "p-monitor-24",
+      "name": "Dell 24-inch FHD Monitor",
+      "price": 249,
+      "image": "assets/images/monitor.svg",
+      "tags": ["Second display", "Travel station"],
+      "category": "Peripherals",
+      "description": "Second monitor for productivity and remote setups.",
+      "specs": ["1920x1080", "HDMI + DisplayPort", "VESA mount"]
+    },
+    {
+      "id": "p-dock-usbc",
+      "name": "USB-C Dock",
+      "price": 269,
+      "image": "assets/images/dock.svg",
+      "tags": ["Single-cable", "Ethernet"],
+      "category": "Peripherals",
+      "description": "Dock for monitor, network, and accessory expansion.",
+      "specs": ["100W passthrough", "Dual display support", "Gigabit Ethernet"]
+    },
+    {
+      "id": "p-kb-mouse",
+      "name": "Wireless Keyboard + Mouse Combo",
+      "price": 99,
+      "image": "assets/images/keyboard-mouse.svg",
+      "tags": ["Standard", "Quiet keys"],
+      "category": "Peripherals",
+      "description": "General purpose wireless input bundle.",
+      "specs": ["2.4GHz receiver", "Full-size keyboard", "Optical mouse"]
+    },
+    {
+      "id": "p-headset",
+      "name": "USB Conference Headset",
+      "price": 129,
+      "image": "assets/images/headset.svg",
+      "tags": ["Meetings", "Noise reduction"],
+      "category": "Peripherals",
+      "description": "Headset with microphone for calls and online meetings.",
+      "specs": ["USB-C", "Boom mic", "Inline controls"]
+    }
+  ],
+  "setups": [
+    {
+      "id": "setup-windows-recommended",
+      "name": "Recommended Windows setup",
+      "description": "Balanced workstation setup for office and hybrid staff.",
+      "items": ["w-latitude-7450", "p-monitor-27", "p-monitor-24", "p-dock-usbc", "p-kb-mouse", "p-headset"]
+    },
+    {
+      "id": "setup-windows-travel",
+      "name": "Travel-focused Windows setup",
+      "description": "Portable laptop setup with desk-ready dual-monitor support.",
+      "items": ["w-elitebook-840", "p-monitor-27", "p-monitor-24", "p-dock-usbc", "p-kb-mouse", "p-headset"]
+    },
+    {
+      "id": "setup-mac-recommended",
+      "name": "Recommended Mac setup",
+      "description": "Reliable Mac package for design and administrative teams.",
+      "items": ["m-macbook-pro-14", "p-monitor-27", "p-monitor-24", "p-dock-usbc", "p-kb-mouse", "p-headset"]
+    }
+  ]
+}
